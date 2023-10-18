@@ -11,7 +11,7 @@ Here is a simple flow chart:
 
 ```mermaid
 erDiagram
-    ORDER ||--o{ PRODUCT : Contains
+    ORDER ||--o{ ORDER-DETAIL : Contains
     ORDER {
 int Id
 int CustomerId
@@ -19,7 +19,7 @@ int ProductId
 Date Date
     }
 
-    ORDER-DETAIL ||--o{ ORDER-PRODUCT : Places
+    ORDER-DETAIL ||--o{ PRODUCT : Places
     ORDER-DETAIL {
 int Id
 int OrderId
