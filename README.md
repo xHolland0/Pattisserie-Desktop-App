@@ -11,21 +11,21 @@ Here is a simple flow chart:
 
 ```mermaid
 erDiagram
-    CUSTOMER ||--o{ ORDER-PRODUCT : Places
-    CUSTOMER {
-int Id
-string FirstName
-string LastName
- int PhoneNumber
-string Email
-    }
-
-    ORDER-PRODUCT ||--o{ PRODUCT : Contains
-    ORDER-PRODUCT {
+    ORDER ||--o{ PRODUCT : Contains
+    ORDER {
 int Id
 int CustomerId
 int ProductId
 Date Date
+    }
+
+    ORDER-DETAIL ||--o{ ORDER-PRODUCT : Places
+    ORDER-DETAIL {
+int Id
+int OrderId
+int ProductId
+int Quantity
+int TotalPrice
     }
 
     PRODUCT ||--o{ CATEGORY : Is
