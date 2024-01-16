@@ -10,38 +10,23 @@ With this Short-Scale project, Patisserie managers will be able to manage their 
 Here is a simple flow chart:
 
 ```mermaid
-erDiagram
-    ORDER ||--o{ ORDER-DETAIL : Contains
-    ORDER {
-int Id
-int CustomerId
-int ProductId
-Date Date
-    }
+graph LR
+A[User]
 
-    ORDER-DETAIL ||--o{ PRODUCT : Places
-    ORDER-DETAIL {
-int Id
-int OrderId
-int ProductId
-int Quantity
-int TotalPrice
-    }
+A --> C(Product )
+C --> Add
+C --> Delete
+C --> Update
+C --> Listing
+A --> D(Order)
+D --> Order_Add
+D --> Order_Delete
+D --> Order_Update
+D --> Order_Listing
 
-    PRODUCT ||--o{ CATEGORY : Is
-    PRODUCT {
-int Id
-string Name
-string Description
-int Price
-int CategoryId
-int Calorie
-    }
-    CATEGORY {
-int Id
-string Name
-    }
 ```
   Database Schema to Follow      
-![ss1](https://github.com/xHolland41/Pattisserie-Desktop-App/assets/81883631/055827ae-837b-4c84-8b88-5b7485ff2da3)
+![ss1](https://github.com/xHolland41/Pattisserie-Desktop-App/assets/81883631/9445092d-19d3-4fc1-a026-6f91438028ee)
+
+
 
