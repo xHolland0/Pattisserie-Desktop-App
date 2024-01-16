@@ -2,7 +2,7 @@
 ![ss2](https://github.com/xHolland41/Pattisserie-Desktop-App/assets/81883631/627d8d49-32e7-4f7b-bfdf-512a147eea0d)
 
 ## Project Limits
--Add, remove, update and listing functions in the Products, Categories and Orders tables.
+- Add, remove, update and listing functions in the Products, Categories and Orders tables.
 
 ## Works
 | No  | Work Name | Time |
@@ -20,8 +20,8 @@
 | N/A | N/A | N/A | N/A  |
 
 ## Technologies and tools to be used
--Figma
--Visual Studio
+* Figma
+* Visual Studio
 
 **Patisserie Desktop App**
 
