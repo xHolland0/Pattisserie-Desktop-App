@@ -20,6 +20,7 @@
 | N/A | N/A | N/A | N/A  |
 
 ## Technologies and tools to be used
+* MSSQL
 * Figma
 * Visual Studio
 
